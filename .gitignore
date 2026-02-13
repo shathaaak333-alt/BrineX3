@@ -1,0 +1,24 @@
+# 1. Python & System Basics (files you don't need)
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# 2. Virtual Environments (never upload your installed libraries)
+venv/
+env/
+.env
+
+# 3. Streamlit Specifics
+.streamlit/secrets.toml
+# Note: Keep .streamlit/config.toml if you have one, but hide secrets.
+
+# 4. Data & Output Files (Specific to BrineX)
+# You likely don't want to track every report or Excel file you generate
+*.xlsx
+*.csv
+*.txt
+
+# Exception: If you WANT to keep your specific example data file, 
+# you can force include it by adding "!" before the filename:
+!brinex_lab_scenarios_month1-3.csv
